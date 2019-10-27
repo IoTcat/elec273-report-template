@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.27)  27 OCT 2019 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.27)  27 OCT 2019 18:59
 entering extended mode
 **./ex_report.tex
 (ex_report.tex
@@ -392,13 +392,11 @@ as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.127 
-       [1]
-
-LaTeX Warning: Citation `ref:Maths' on page 2 undefined on input line 143.
-
-(ex_report.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 24.
+       [1] (ex_report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+[]\OT1/cmr/m/n/10.95 WikiBooks, ``L[]T[]X ad-vanced math-e-mat-ics,'' []$http :
+ / / en . wikibooks . org / wiki / LaTeX /
+ []
 
 )pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
@@ -421,17 +419,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `ex_report.out' has not changed.
 (rerunfilecheck)             Checksum: 0A9A961BFB41F460F7C24B82BF8E4B27;515.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 8894 strings out of 492452
- 126126 string characters out of 3129819
- 425934 words of memory out of 3000000
- 13135 multiletter control sequences out of 15000+200000
+ 8896 strings out of 492452
+ 126151 string characters out of 3129819
+ 425964 words of memory out of 3000000
+ 13136 multiletter control sequences out of 15000+200000
  11151 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,45p,746b,1660s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -452,9 +446,9 @@ lic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ex_report.pdf (5 pages, 266510 bytes).
+Output written on ex_report.pdf (5 pages, 267154 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
