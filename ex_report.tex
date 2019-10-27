@@ -5,14 +5,14 @@
 \usepackage{tocloft}            % This squashes the Table of Contents a bit
 \setlength\cftbeforesecskip{3pt}
 
-\definecolor{MyLightYellow}{cmyk}{0,0.,0.2,0} 
+\definecolor{MyLightYellow}{cmyk}{0,0.,0.2,0}
 
 \setlength{\parskip}{4pt}        % sets spacing between paragraphs
 \interfootnotelinepenalty=500    % this prevents footnotes breaking across pages
 
 \title{\includegraphics[width=0.4\textwidth]{UnivCrest}
         \\Experiment 14 - The Unknown Circuit}          % <<<<<<<<< change the title as appropriate
-\author{\textcolor{red}{Student ID 200123456 (Group 999)}                % <<<<<<<<< your ID and group number
+\author{%\textcolor{red}{Student ID 200123456 (Group 999)}                % <<<<<<<<< your ID and group number
         \\  \textcolor{red}{ELEC273}\footnote{\textcolor{red}{IMPORTANT: In a standard technical report, you would need to include here your personal details as the author of the document. However, remember that marking of coursework is anonymous and therefore you should remove this part before submitting your report for Year 2 labs! Do not include your name, student ID, email address or any other personal information.}}}                                    % <<<<<<<<< module code
 \date{\tiny{\today}}
 
@@ -20,20 +20,21 @@
 \begin{titlepage}
 \maketitle
 \addtocontents{toc}{\protect\thispagestyle{empty}} % because we don't want a page number on the title page
-                                                   % Thanks to Huang Shanyue for suggesting this 
+                                                   % Thanks to Huang Shanyue for suggesting this
 
 \begin{abstract}
-This document describes what is expected from an engineering laboratory report. While this is not a definitive guide to report-writing, it is intended as a guide to assist in documenting and presenting your experimental work. Appended to this guide are some real examples of common mistakes that should be avoided. It is expected that lab reports are prepared using the \LaTeX~ typesetting system, adopting pne of the standard report templates provided on VITAL. 
+This document describes what is expected from an engineering laboratory report. While this is not a definitive guide to report-writing, it is intended as a guide to assist in documenting and presenting your experimental work. Appended to this guide are some real examples of common mistakes that should be avoided. It is expected that lab reports are prepared using the \LaTeX~ typesetting system, adopting pne of the standard report templates provided on VITAL.
 \end{abstract}
 
 \fbox{
 \begin{minipage}{0.9\linewidth} \footnotesize
 \begin{center} \textbf{Declaration} \end{center}
-!!!!! Copy the plagiarism and collusion declaration from \url{http://pcwww.liv.ac.uk/~wax/downloads/declaration.png}
-% Unless this is written out, word for word, your report cannot be accepted.
+I confirm that I have read and understood the University's definitions of plagiarism and collusion from the Code of Practice on Assessment. I confirm that I have neither committed plagiarism in the completion of this work nor have I colluded with ant other party in the preparation and production of this work. The work presented here is my own and in my own words except where I have clearly indicated and acknowledged that I have quoted or used figures from published or unpublished sources (including the web). I understand the consequences of engaging in plagiarism and collusion as described in the Code of Practice on Assessment (Appendix L).
 \end{minipage}
 }
 
+\thispagestyle{empty}
+\newpage
 \tableofcontents
 \end{titlepage}
 
@@ -67,7 +68,7 @@ The Method/Procedure section describes the experimental process in chronological
 \section{Results}
 %-------------------------------------------------------------------------------------------------------
 
-This is where you describe the important qualitative and quantitative observations from the experiment. Data should be tabulated and/or graphed. Graphs must always be captioned (as with figures, above), and axes clearly annotated with units. Always follow your graphs with a brief description, demonstrating your understanding of what has been plotted (eg. ``The graph in Fig. 4 illustrates the frequency response of this circuit, with a clear resonance peak at 15~kHz.'') as tables and graphs are rarely self-explanatory. If the results differ from what was expected, explain both \textbf{how} (i.e. in what way) and \textbf{why} (i.e. possible reasons behind this behaviour) when referring to these results. 
+This is where you describe the important qualitative and quantitative observations from the experiment. Data should be tabulated and/or graphed. Graphs must always be captioned (as with figures, above), and axes clearly annotated with units. Always follow your graphs with a brief description, demonstrating your understanding of what has been plotted (eg. ``The graph in Fig. 4 illustrates the frequency response of this circuit, with a clear resonance peak at 15~kHz.'') as tables and graphs are rarely self-explanatory. If the results differ from what was expected, explain both \textbf{how} (i.e. in what way) and \textbf{why} (i.e. possible reasons behind this behaviour) when referring to these results.
 
 % This is how you could include a figure
 %
@@ -115,7 +116,7 @@ $R$ ($\Omega$) & $T$ (K) & $1/T$ (K$^{-1}$) & $\ln P$ \\
 166.67$\pm$3.33 & 901.14$\pm$20.13& $1.1097\times10^{-3}$& -11.90 \\ \hline
 \hline
 \end{tabular}
-\end{center}  
+\end{center}
 \end{table}
 
 %------------------------------------------------------------------------------------------------------- 
@@ -145,13 +146,13 @@ Further guidance on writing and manipulating mathematical expressions, symbols a
 \section{Conclusions}
 %-------------------------------------------------------------------------------------------------------
 
-This final section contains a brief statement to summarise the outcome of the experiment, and a statement outlining to what extent the objectives of the experiment have been met, and what has been learnt as a result of this. In some ways the Conclusions section is a reflection of the Abstract, reiterating what the experiment was aiming to achieve, and summarising the outcomes. It can also be thought of as a summary of the Discussion section. 
+This final section contains a brief statement to summarise the outcome of the experiment, and a statement outlining to what extent the objectives of the experiment have been met, and what has been learnt as a result of this. In some ways the Conclusions section is a reflection of the Abstract, reiterating what the experiment was aiming to achieve, and summarising the outcomes. It can also be thought of as a summary of the Discussion section.
 
 %
 
 %-------------------------------------------------------------------------------------------------------
 
-\bibliographystyle{IEEEtran}  
+\bibliographystyle{IEEEtran}
 \bibliography{MyRefs.bib}         % The file MyRefs.bib contains the actual bibliography material
                                   % References section created automatically
 \addcontentsline{toc}{section}{References}
@@ -166,11 +167,11 @@ This final section contains a brief statement to summarise the outcome of the ex
 
 These Appendices are all optional...
 
-%------------------------------------------------------------------------------------------------------- 
+%-------------------------------------------------------------------------------------------------------
 \section{Tables}
-%------------------------------------------------------------------------------------------------------- 
+%-------------------------------------------------------------------------------------------------------
 
-%If you have pages and pages of numberical results, these can be tabulated in the Appendix rather than included in the body of the report. 
+%If you have pages and pages of numberical results, these can be tabulated in the Appendix rather than included in the body of the report.
 
 %-------------------------------------------------------------------------------------------------------
 \section{Program Listings}
